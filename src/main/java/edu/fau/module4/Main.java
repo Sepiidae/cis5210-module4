@@ -77,27 +77,25 @@ public class Main {
             /*
             Add you are homework code here
              */
-            // Q1
-            String createTrigger = "CREATE TRIGGER UPDATEAT AFTER UPDATE\n"
-                    + "ON PATIENT REFERENCING OLD AS OLD\n"
-                    + "FOR EACH ROW MODE DB2SQL\n"
-                    + "UPDATE PATIENT set UPDATED_AT = CURRENT_TIMESTAMP where ID = OLD.ID";
+            
+            // Q1 Create a trigger named UPDATEAT. This trigger should update the UPDATED_AT column setting it to the current timestamp each time the row is updated. 
+            String createTrigger = "-- ADD YOUR CODE HERE";
             stmt.execute(createTrigger);
 
             
-            // Q2
-            String updateQuery = "UPDATE PATIENT SET POSTALCODE = '32901-6975' where POSTALCODE in ( '32901' )";
+            // Q2 Update the Java and JDBC code so the postal code for ID 1 is updated to be 11111-1111. 
+            String updateQuery = "-- ADD YOUR CODE HERE";
             stmt.execute(updateQuery);
 
             
-            // Q3
-            // Sleep so we can prove the 
+            // Q3 Update the Java and JDBC code so the postal code for ID 3 is deleted from the PATIENT table. 
+            // Sleep so we can prove the code works as expected
             Thread.sleep(10000);
-            String update1 = "UPDATE PATIENT SET POSTALCODE = '11111-1111' where ID in ( 1 )";
+            String update1 = "-- ADD YOUR CODE HERE";
             stmt.execute(update1);
 
             // Q4
-            String delete = "DELETE FROM PATIENT where ID in ( 3 )";
+            String delete = "-- ADD YOUR CODE HERE";
             stmt.execute(delete);
 
             

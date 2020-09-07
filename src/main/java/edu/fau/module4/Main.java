@@ -77,32 +77,43 @@ public class Main {
             /*
             Add you are homework code here
              */
-            
             // Q1 Create a trigger named UPDATEAT. This trigger should update the UPDATED_AT column setting it to the current timestamp each time the row is updated. 
-            String createTrigger = "-- ADD YOUR CODE HERE";
-            stmt.execute(createTrigger);
+            try {
+                String createTrigger = "-- ADD YOUR CODE HERE";
+                stmt.execute(createTrigger);
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
 
-            
             // Q2 Update the Java and JDBC code so the postal code for ID 1 is updated to be 11111-1111. 
-            String updateQuery = "-- ADD YOUR CODE HERE";
-            stmt.execute(updateQuery);
+            try {
+                String updateQuery = "-- ADD YOUR CODE HERE";
+                stmt.execute(updateQuery);
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
 
-            
             // Q3 Update the Java and JDBC code so the postal code for ID 3 is deleted from the PATIENT table. 
             // Sleep so we can prove the code works as expected
-            Thread.sleep(10000);
-            String update1 = "-- ADD YOUR CODE HERE";
-            stmt.execute(update1);
+            try {
+                Thread.sleep(10000);
+                String update1 = "-- ADD YOUR CODE HERE";
+                stmt.execute(update1);
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
 
             // Q4
-            String delete = "-- ADD YOUR CODE HERE";
-            stmt.execute(delete);
+            try {
+                String delete = "-- ADD YOUR CODE HERE";
+                stmt.execute(delete);
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
 
-            
             /*
             End of your homework code
              */
-            
             // Lets Query our data and see if we inserted data for real.
             String query = "SELECT * FROM PATIENT";
             rs = stmt.executeQuery(query);

@@ -11,6 +11,5 @@
 - Click Clone
 - Paste https://github.com/Sepiidae/cis5210-module4.git
 - Click Finish
-
-Click the Play button to execute the project. 
+- Click the Play button to execute the project. 
 

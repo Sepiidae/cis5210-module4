@@ -79,7 +79,7 @@ public class Main {
              */
             // Q1 Create a trigger named UPDATEAT. This trigger should update the UPDATED_AT column setting it to the current timestamp each time the row is updated. 
             try {
-                String createTrigger = "-- ADD YOUR CODE HERE";
+               z String createTrigger = "-- ADD YOUR CODE HERE";
                 stmt.execute(createTrigger);
             } catch (Exception ex) {
                 ex.printStackTrace();
@@ -103,13 +103,7 @@ public class Main {
                 ex.printStackTrace();
             }
 
-            // Q4
-            try {
-                String delete = "-- ADD YOUR CODE HERE";
-                stmt.execute(delete);
-            } catch (Exception ex) {
-                ex.printStackTrace();
-            }
+           
 
             /*
             End of your homework code

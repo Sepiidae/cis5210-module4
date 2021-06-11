@@ -7,9 +7,11 @@
 - Install NetBeans
 - Open NetBeans
 - Click Team
-- Select Git
+- Select Git* 
 - Click Clone
 - Paste https://github.com/Sepiidae/cis5210-module4.git
 - Click Finish
 - Click the Play button to execute the project. 
 
+* If GIT is not available in the Team menu reach out to the instructor. This was reported by students in Summer 2021 and we can debug together.
+* Installing GIT into Windows is also a solution but we really want to use the IDE's setup.
